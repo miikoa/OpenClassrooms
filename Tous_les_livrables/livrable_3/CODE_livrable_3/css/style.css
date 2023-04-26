@@ -58,7 +58,7 @@ body {
     align-items: center;
 }
     
-ul{
+.nav-list{
     list-style:none;
     margin: 0;
     display: flex;
@@ -72,12 +72,12 @@ a{
     text-decoration:none;
 }
     
-li:first-child{
+.nav-list :first-child{
     flex:2;
 }
 
 li:nth-child(2) + li:nth-child(2):hover{
-    border-top: 1% solid #DEEBFF;
+    border-top: 1% solid var(--filter-bg-color);
 }
   
 li :hover{
@@ -96,10 +96,10 @@ label{
     background-color: #0065FC;
     padding: 1.5%;
     color: #FFF;
-    border-radius: 0% 25% 25% 0;
+    border-radius: 0 15px 15px 0;
 }
-i{
-    border-radius: 25% 0% 0% 25%;
+.search-bar i.fa-solid.fa-location-dot {
+    border-radius: 15px 0 0 15px;
     gap: 4%;
     padding: 1.5%;
     color: #000;
@@ -111,10 +111,10 @@ i{
 input{
     width: auto;
 }
- 
 .search-input{
     border: none;
     outline: none;
+    color: #000;
 }
 .search-input::placeholder {
     color: #000;
@@ -122,7 +122,45 @@ input{
     font-weight:bold ;
     text-align: center;
   }
+/****** Liste de Filtres ***********/
+.filtres-container{
+    display: flex;
+    font-weight: bold;
+    font-size: small;
+    margin-top: 1%;
+    margin-right: 40%;
+}
+.filtres-list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+     
+}
+.filtres-container .filtres-list li {
+    border: 3px solid var(--main-bg-color);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-flow: nowrap;
+    padding: 3%;
+  }
+  .filtres-container .filters-list li{
+    display: flex;
+    align-items: center;
+  }  
+  .filtres-container ul li:nth-child(1){
+    border: none;
+  }
   
+   i.fa-money-bill-wave,
+   i.fa-person, 
+   i.fa-fire,  
+   i.fa-heart,
+   i.fa-fire{
+  padding-right: 7%;
+  background-color: transparent;
+} 
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
