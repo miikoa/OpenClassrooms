@@ -90,8 +90,8 @@ li :hover{
     width: auto;
     font-size: small;
     padding: 1.5%;
+    
 }
- 
 label{
     background-color: #0065FC;
     padding: 1.5%;
@@ -110,8 +110,10 @@ label{
 }
 input{
     width: auto;
+    
 }
 .search-input{
+    padding: 1%;
     border: none;
     outline: none;
     color: #000;
@@ -134,7 +136,7 @@ input{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-     
+    gap: 10px;
 }
 .filtres-container .filtres-list li {
     border: 3px solid var(--main-bg-color);
@@ -143,6 +145,8 @@ input{
     align-items: center;
     flex-flow: nowrap;
     padding: 3%;
+    padding-left: 4%;
+    padding-right: 4%;
   }
   .filtres-container .filters-list li{
     display: flex;
