@@ -65,17 +65,6 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 /****** Header/Nav ***********/
-.headline{
-    margin-bottom: 35px;
-}
-
-.headline h1{
-    margin-bottom: 8px;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 26px;
-}
-
 .nav-container{
     display:flex;
     align-items: center;
@@ -90,7 +79,7 @@ h1, h2, h3, h4, h5, h6, p{
     margin-bottom: 30px;
 }
     
-a{
+a li {
     color: #000;
     text-decoration:none;
 }
@@ -99,7 +88,7 @@ a{
     flex:2;
 }
 
-li:nth-child(2) + li:nth-child(2):hover{
+.nav-list:nth-child(2) + .nav-li:nth-child(2):hover{
     border-top: 1% solid var(--filter-bg-color);
 }
   
@@ -107,6 +96,24 @@ li :hover{
     color:var(--main-color);
    
 }
+/****** info-grouo ***********/
+.headline{
+    margin-bottom: 35px;
+}
+
+.headline h1{
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.headline p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.78px;
+}
+
 /****** Search Bar _1 ***********/
 .search-bar{
     box-sizing: border-box;
@@ -114,7 +121,7 @@ li :hover{
     font-size: small;
 }
 
-label{
+.search-bar .search-bar-form button{
     background-color: #0065FC;
     padding: 1.5%;
     color: #FFF;
@@ -125,7 +132,6 @@ label{
     border-radius: 15px 0 0 15px;
     gap: 4%;
     padding: 1.5%;
-    color: #000;
     background-color: #F2F2F2;
 }
 
@@ -135,14 +141,12 @@ label{
 
 input{
     width: auto;
-    
 }
 
 .search-input{
     padding: 1%;
     border: none;
     outline: none;
-    color: #000;
 }
 .search-input::placeholder {
     color: #000;
