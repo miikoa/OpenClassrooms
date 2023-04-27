@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
@@ -52,7 +53,29 @@ body {
 .neutralStar {
     color: var(--main-bg-color)
 }
+
+/****** RESET ***********/
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
 /****** Header/Nav ***********/
+.headline{
+    margin-bottom: 35px;
+}
+
+.headline h1{
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
 .nav-container{
     display:flex;
     align-items: center;
@@ -89,15 +112,15 @@ li :hover{
     box-sizing: border-box;
     width: auto;
     font-size: small;
-    padding: 1.5%;
-    
 }
+
 label{
     background-color: #0065FC;
     padding: 1.5%;
     color: #FFF;
     border-radius: 0 15px 15px 0;
 }
+
 .search-bar i.fa-solid.fa-location-dot {
     border-radius: 15px 0 0 15px;
     gap: 4%;
@@ -105,13 +128,16 @@ label{
     color: #000;
     background-color: #F2F2F2;
 }
+
 .fa-location-dot{
     color: #000;
 }
+
 input{
     width: auto;
     
 }
+
 .search-input{
     padding: 1%;
     border: none;
@@ -231,7 +257,7 @@ input{
 
 
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
+/* Le code ci-dessous correspond Ã  la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
